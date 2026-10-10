@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f4ed">
+<title>RAISE Growth | New Challenge, New Version of You</title>
+<style>
+:root{--ink:#243b36;--muted:#63756f;--cream:#fbf8f0;--paper:#fffdf8;--mint:#dcefe3;--green:#2e6a56;--pink:#f6dfe5;--lav:#e8e1f7;--yellow:#f8edc9;--blue:#dfeaf8;--line:#e4e3d9;--shadow:0 14px 38px rgba(37,60,49,.08);--radius:24px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}a{color:inherit} .wrap{width:min(1120px,92%);margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(251,248,240,.92);backdrop-filter:blur(12px);border-bottom:1px solid #e9e6db}.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900;letter-spacing:.03em}.brand-icon{width:42px;height:42px;display:grid;place-items:center;background:var(--mint);border-radius:15px;font-size:23px}.navlinks{display:flex;gap:20px;align-items:center}.navlinks a{text-decoration:none;font-size:.93rem;font-weight:700;color:#53665f}.navlinks a:hover{color:var(--green)}.menu-toggle{display:none;border:1px solid var(--line);background:white;border-radius:12px;padding:8px 12px}.hero{padding:62px 0 46px}.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:30px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border-radius:999px;background:#eaf1df;color:#456a47;font-size:.78rem;text-transform:uppercase;font-weight:900;letter-spacing:.08em}.hero h1{font-size:clamp(2.4rem,5.2vw,4.9rem);line-height:1.04;letter-spacing:-.05em;margin:18px 0 18px;max-width:700px}.hero h1 span{color:var(--green)}.hero p{font-size:1.08rem;color:#5c6b64;max-width:610px}.button-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}.btn{border:0;border-radius:14px;padding:12px 17px;font-weight:800;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:transform .15s,box-shadow .15s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--green);color:#fff;box-shadow:0 8px 18px #2e6a5626}.btn-soft{background:#fff;border:1px solid var(--line);color:var(--ink)}.btn-small{font-size:.88rem;padding:9px 12px;border-radius:11px}.hero-art{background:linear-gradient(145deg,#e5f1e6,#f4ead8 60%,#f7dfe5);border-radius:36px;padding:25px;min-height:340px;position:relative;overflow:hidden;box-shadow:var(--shadow)}.sun{width:90px;height:90px;border-radius:50%;background:#f5d889;position:absolute;top:25px;right:30px}.path{position:absolute;bottom:-55px;left:10%;width:80%;height:210px;background:#b8d9b3;border-radius:50% 50% 0 0;transform:rotate(-6deg)}.hill2{position:absolute;bottom:-92px;right:-10%;width:85%;height:190px;background:#87b997;border-radius:50% 50% 0 0;transform:rotate(8deg)}.hero-note{position:relative;z-index:2;background:rgba(255,253,248,.92);border:1px solid #ffffffbd;padding:20px;border-radius:22px;width:72%;box-shadow:0 12px 25px #244b3920}.hero-note strong{display:block;font-size:1.2rem}.hero-note p{font-size:.92rem;margin:8px 0 0}.plant{font-size:90px;position:absolute;right:28px;bottom:55px;z-index:3;filter:drop-shadow(0 5px 4px #365c3a22)}.floating-label{position:absolute;z-index:4;right:18px;top:135px;background:#fff6d8;border-radius:14px;padding:10px 14px;font-weight:800;transform:rotate(5deg);box-shadow:var(--shadow)}
+section{padding:42px 0;scroll-margin-top:86px}.section-head{max-width:720px;margin-bottom:24px}.kicker{color:#63836b;text-transform:uppercase;letter-spacing:.12em;font-size:.76rem;font-weight:900}.section-head h2{font-size:clamp(1.8rem,3.4vw,2.8rem);line-height:1.1;letter-spacing:-.035em;margin:8px 0 10px}.section-head p{color:var(--muted);margin:0}.panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}.raise-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.raise-card{padding:17px;border-radius:19px;min-height:145px}.raise-card b{font-size:2rem;display:block;line-height:1;margin-bottom:13px}.raise-card h3{font-size:.99rem;margin:0 0 5px}.raise-card p{font-size:.86rem;color:#5f6e67;margin:0}.c-mint{background:var(--mint)}.c-yellow{background:var(--yellow)}.c-lav{background:var(--lav)}.c-pink{background:var(--pink)}.c-blue{background:var(--blue)}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:19px}.step{border:1px dashed #c7d7cb;border-radius:18px;padding:16px;background:#fffefa}.step .num{font-size:.75rem;color:var(--green);font-weight:900;letter-spacing:.08em}.step h3{margin:6px 0;font-size:1.04rem}.step p{margin:0;font-size:.88rem;color:var(--muted)}
+.quest-grid{display:grid;grid-template-columns:1.4fr .6fr;gap:18px;align-items:stretch}.quest-frame{overflow:hidden;border-radius:20px;background:#edf3eb;border:1px solid var(--line);min-height:460px;position:relative}.quest-frame iframe{display:block;width:100%;height:560px;border:0;background:#f4f4f0}.quest-placeholder{padding:32px;text-align:center;display:grid;place-items:center;min-height:430px}.quest-placeholder .big{font-size:4rem}.quest-placeholder p{max-width:490px;color:var(--muted)}.side-note{background:var(--mint);border-radius:22px;padding:24px}.side-note h3{margin-top:0}.side-note li{margin:8px 0}.side-note .btn{margin-top:12px}
+.challenge-layout{display:grid;grid-template-columns:.72fr 1.28fr;gap:20px;align-items:start}.setup-card h3,.timer-card h3{margin-top:0}.field{display:flex;flex-direction:column;gap:6px;margin:12px 0}.field label{font-size:.88rem;font-weight:800}.field input,.field select,.field textarea{width:100%;border:1px solid #d9ded5;background:#fff;border-radius:12px;padding:11px 12px;color:var(--ink);outline:none}.field textarea{min-height:88px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:#6c9b83;box-shadow:0 0 0 3px #dcefe3}.name-list{display:grid;grid-template-columns:1fr 1fr;gap:8px}.hint{font-size:.83rem;color:var(--muted)}.divider{height:1px;background:var(--line);margin:18px 0}.topic-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.topic-card{border-radius:20px;padding:18px;border:1px solid #e6e5dc;min-height:180px;display:flex;flex-direction:column;gap:8px}.topic-card:nth-child(5n+1){background:#f7e3e8}.topic-card:nth-child(5n+2){background:#e5edf9}.topic-card:nth-child(5n+3){background:#e2f0e5}.topic-card:nth-child(5n+4){background:#fbefcd}.topic-card:nth-child(5n){background:#eee7fa}.topic-card .tag{font-size:.73rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em;opacity:.8}.topic-card h3{margin:0;font-size:1.1rem}.topic-card p{margin:0;color:#52645c;font-size:.93rem}.topic-card .try2{border-top:1px dashed #83968a70;padding-top:10px;margin-top:auto}.topic-card .try2 strong{display:block;font-size:.77rem;letter-spacing:.07em;text-transform:uppercase;margin-bottom:3px}.topic-card .topic-footer{display:flex;justify-content:space-between;align-items:center;font-size:.8rem;font-weight:800;margin-top:6px}.empty-state{grid-column:1/-1;border:2px dashed #d8dfd6;padding:38px;text-align:center;border-radius:20px;color:var(--muted);background:#fffefa}.empty-state .big{font-size:2.8rem}
+.session-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:20px;align-items:start}.timer-card{text-align:center;background:#f3eafa}.timer-circle{width:195px;height:195px;border-radius:50%;margin:16px auto;display:grid;place-items:center;position:relative;background:conic-gradient(#7e68b3 var(--progress,100%),#ded7ec 0);box-shadow:inset 0 0 0 1px #ffffff80}.timer-circle:before{content:"";position:absolute;inset:11px;border-radius:50%;background:#f3eafa}.timer-display{position:relative;font-size:2.8rem;font-weight:900;letter-spacing:-.04em;font-variant-numeric:tabular-nums}.timer-state{color:#6b6087;font-size:.85rem;font-weight:700}.timer-controls{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}.timer-controls select{border:1px solid #d4cae8;background:white;border-radius:10px;padding:8px}.round-list{display:grid;gap:10px}.round-item{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:15px;padding:12px}.round-icon{width:40px;height:40px;border-radius:12px;background:#e5f1e6;display:grid;place-items:center;font-size:1.25rem;flex-shrink:0}.round-item p{margin:2px 0 0;font-size:.86rem;color:var(--muted)}
+.feedback-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.feedback-form{background:var(--blue)}.reflection-form{background:#fffdf8}.feedback-list{display:grid;gap:10px;margin-top:14px}.feedback-entry{background:white;border:1px solid var(--line);border-radius:14px;padding:14px}.feedback-entry .meta{font-size:.79rem;color:var(--muted);font-weight:800;margin-bottom:5px}.feedback-entry p{margin:5px 0;font-size:.92rem}.entry-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:8px}.small-link{border:0;background:transparent;color:#436a55;text-decoration:underline;font-weight:700;font-size:.82rem}.notice{padding:12px 14px;border-radius:13px;background:#f9f0d5;color:#66542e;font-size:.85rem;margin:12px 0}.success-note{display:none;padding:12px;border-radius:12px;background:#e2f3e6;color:#285c3f;margin:10px 0;font-size:.88rem;font-weight:700}.foot{padding:30px 0 50px;color:var(--muted)}.foot-inner{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:20px;font-size:.88rem}.backtop{font-weight:800;color:var(--green);text-decoration:none}.mini-stat{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}.pill{background:#fff;border:1px solid #e6e2d7;border-radius:999px;padding:6px 10px;font-size:.8rem;font-weight:800}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:860px){.hero-grid,.quest-grid,.challenge-layout,.session-grid,.feedback-grid{grid-template-columns:1fr}.raise-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}.quest-frame iframe{height:500px}.hero-art{min-height:300px}.hero-note{width:72%}}
+@media(max-width:600px){.nav{min-height:62px;flex-wrap:wrap}.menu-toggle{display:block}.navlinks{display:none;width:100%;padding:0 0 15px;flex-direction:column;align-items:flex-start;gap:12px}.navlinks.open{display:flex}.hero{padding:38px 0 26px}.hero h1{font-size:2.55rem}.hero-art{min-height:280px;padding:18px}.hero-note{width:83%}.plant{font-size:72px;right:15px;bottom:38px}.floating-label{top:155px;right:10px}.raise-grid{grid-template-columns:1fr 1fr}.raise-card{padding:13px;min-height:150px}.steps{grid-template-columns:1fr 1fr}.panel{padding:17px}.topic-cards{grid-template-columns:1fr}.name-list{grid-template-columns:1fr 1fr}.timer-circle{width:175px;height:175px}.timer-display{font-size:2.4rem}.foot-inner{flex-direction:column}.quest-frame iframe{height:430px}}
+@media print{.topbar,.hero,.intro-section,.quest-section,.setup-card,.timer-card,.feedback-grid,.foot,.no-print{display:none!important}body{background:white}.topic-cards{grid-template-columns:repeat(2,1fr)}section{padding:0}.panel{box-shadow:none;border:0;padding:0}.topic-card{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="topbar" id="top">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="RAISE Growth beranda"><span class="brand-icon">🌱</span><span>RAISE <span style="color:#518368">GROWTH</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false">☰ Menu</button>
+    <nav class="navlinks" id="navLinks">
+      <a href="#about">Tentang</a><a href="#quest">Growth Quest</a><a href="#challenge">Kartu Tantangan</a><a href="#session">Timer</a><a href="#reflection">Feedback & Refleksi</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <span class="eyebrow">✨ Growth Mindset Experience</span>
+   <h1>New Challenge,<br><span>New Version</span> of You.</h1>
+   <p>Kenali dirimu, berani mencoba, belajar dari masukan, dan bertumbuh melalui setiap tantangan. Perubahan besar bisa dimulai dari satu langkah kecil.</p>
+   <div class="button-row"><a class="btn btn-primary" href="#quest">Mulai Growth Quest <span>→</span></a><a class="btn btn-soft" href="#challenge">Lihat Kartu Tantangan</a></div>
+   <div class="mini-stat"><span class="pill">🎮 Explore</span><span class="pill">🎯 Take action</span><span class="pill">🌱 Reflect & grow</span></div>
+  </div>
+  <div class="hero-art" aria-label="Ilustrasi perjalanan bertumbuh">
+   <div class="sun"></div><div class="hero-note"><strong>Setiap orang punya prosesnya sendiri. 💚</strong><p>Kamu tidak harus langsung sempurna. Berani mulai, belajar dari pengalaman, lalu coba lagi.</p></div><div class="floating-label">One step at a time ✨</div><div class="path"></div><div class="hill2"></div><div class="plant">🌱</div>
+  </div>
+ </div>
+</section>
+<section class="intro-section" id="about">
+ <div class="wrap">
+  <div class="section-head"><span class="kicker">Kenali RAISE</span><h2>Perjalanan bertumbuh dimulai dari sini.</h2><p>RAISE Growth mengajak murid belajar melalui perjalanan digital, tantangan nyata, feedback teman, dan refleksi diri.</p></div>
+  <div class="raise-grid">
+   <article class="raise-card c-mint"><b>R</b><h3>Recognize Yourself</h3><p>Kenali diri dan pola pikirmu.</p></article>
+   <article class="raise-card c-yellow"><b>A</b><h3>Accept the Challenge</h3><p>Berani menerima tantangan.</p></article>
+   <article class="raise-card c-lav"><b>I</b><h3>Improve Through Feedback</h3><p>Belajar dari masukan.</p></article>
+   <article class="raise-card c-pink"><b>S</b><h3>Strengthen Persistence</h3><p>Tetap berusaha saat sulit.</p></article>
+   <article class="raise-card c-blue"><b>E</b><h3>Evolve Through Reflection</h3><p>Bertumbuh melalui refleksi.</p></article>
+  </div>
+  <div class="steps">
+   <article class="step"><span class="num">01 / EXPLORE</span><h3>Growth Quest</h3><p>Kenali pola pikir lewat permainan Genially.</p></article>
+   <article class="step"><span class="num">02 / TRY</span><h3>Take the Challenge</h3><p>Ambil kartu dan lakukan tantangan.</p></article>
+   <article class="step"><span class="num">03 / LEARN</span><h3>Feedback & Try Again</h3><p>Terima masukan dan coba kembali.</p></article>
+   <article class="step"><span class="num">04 / REFLECT</span><h3>Growth Reflection</h3><p>Catat hal yang dipelajari dan ingin dikembangkan.</p></article>
+  </div>
+ </div>
+</section>
+<section class="quest-section" id="quest">
+ <div class="wrap">
+  <div class="section-head"><span class="kicker">01 · Explore</span><h2>Growth Quest 🎮</h2><p>Masuk ke perjalanan interaktif untuk mengenali pola pikir dan mempersiapkan diri menghadapi tantangan.</p></div>
+  <div class="quest-grid">
+   <div class="quest-frame" id="questFrame">
+    <iframe id="geniallyFrame" title="Growth Quest Genially" src="https://view.genially.com/6aad057b05ef96e9dbd3a6d2" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+   </div>
+   <aside class="side-note">
+    <div style="font-size:2.5rem">🧭</div><h3>Sebelum memulai</h3>
+    <ol><li>Buka permainan dan ikuti petunjuknya.</li><li>Jawab pertanyaan sesuai pemikiranmu.</li><li>Gunakan pengalaman dari Growth Quest saat memilih tantangan.</li></ol>
+    <div class="field"><label for="geniallyUrl">Tautan Genially (opsional)</label><input id="geniallyUrl" type="url" value="https://view.genially.com/6aad057b05ef96e9dbd3a6d2" placeholder="https://view.genially.com/..."></div>
+    <button class="btn btn-primary btn-small" id="loadGenially">Muat tautan</button>
+    <a class="btn btn-soft btn-small" id="openGenially" target="_blank" rel="noopener" href="https://view.genially.com/6aad057b05ef96e9dbd3a6d2">Buka di tab baru ↗</a>
+    <p class="hint">Jika Genially tidak tampil di dalam kotak, buka melalui tombol “Buka di tab baru”. Untuk embed yang optimal, gunakan alamat iframe dari menu Share/Embed di Genially.</p>
+   </aside>
+  </div>
+ </div>
+</section>
+<section id="challenge">
+ <div class="wrap">
+  <div class="section-head"><span class="kicker">02 · Take action</span><h2>Take the Challenge 🎴</h2><p>Atur kelompok, acak kartu sesuai jumlah anggota, lalu jalankan TRY 1 → Feedback → TRY 2. Setiap murid mendapat satu tema beserta pertanyaan pengembangan yang berkaitan.</p></div>
+  <div class="challenge-layout">
+   <div class="panel setup-card">
+    <h3>👥 Pengaturan kelompok</h3>
+    <div class="field"><label for="groupName">Nama kelompok</label><input id="groupName" value="Growth Team 1" maxlength="50"></div>
+    <div class="field"><label for="memberCount">Jumlah anggota</label><select id="memberCount"><option value="6">6 murid</option><option value="7" selected>7 murid</option></select></div>
+    <div class="field"><label>Nama anggota</label><div id="nameList" class="name-list"></div><span class="hint">Nama boleh diubah. Nama hanya tersimpan di browser ini.</span></div>
+    <button class="btn btn-primary" id="drawCards">Acak kartu kelompok ✨</button>
+    <button class="btn btn-soft" id="printCards">Cetak kartu</button>
+    <button class="btn btn-soft" id="clearGroup">Reset kelompok</button>
+    <div id="drawStatus" class="success-note" role="status"></div>
+    <div class="notice">🫶 Kesepakatan kelompok: dengarkan tanpa mengejek, berikan masukan yang sopan, dan hargai keberanian setiap orang untuk mencoba.</div>
+    <p class="hint"><b>Alur:</b> setiap anggota melakukan TRY 1 → memberikan feedback kepada anggota berikutnya searah jarum jam → membuka pertanyaan TRY 2 pada topik yang sama → mengisi refleksi.</p>
+   </div>
+   <div>
+    <div id="topicCards" class="topic-cards" aria-live="polite"><div class="empty-state"><div class="big">🎴</div><h3>Kartu tantangan menunggu kamu!</h3><p>Isi nama kelompok dan anggota, kemudian tekan <b>Acak kartu kelompok</b>.</p></div></div>
+   </div>
+  </div>
+ </div>
+</section>
+<section id="session">
+ <div class="wrap">
+  <div class="section-head"><span class="kicker">03 · Try, learn, try again</span><h2>Timer & alur kegiatan ⏱️</h2><p>Gunakan timer agar setiap anggota mendapat kesempatan yang seimbang. Durasi dapat disesuaikan dengan kebutuhan kelas.</p></div>
+  <div class="session-grid">
+   <div class="panel timer-card">
+    <h3>⏳ Countdown timer</h3>
+    <div class="timer-circle" id="timerCircle" style="--progress:100%"><div><div class="timer-display" id="timerDisplay">01:00</div><div class="timer-state" id="timerState">Siap memulai</div></div></div>
+    <div class="timer-controls"><label class="sr-only" for="timerLength">Durasi timer</label><select id="timerLength"><option value="30">30 detik</option><option value="60" selected>1 menit</option><option value="90">1 menit 30 detik</option><option value="120">2 menit</option><option value="180">3 menit</option><option value="300">5 menit</option></select></div>
+    <div class="timer-controls" style="margin-top:12px"><button class="btn btn-primary btn-small" id="timerStart">▶ Mulai</button><button class="btn btn-soft btn-small" id="timerPause">Ⅱ Jeda</button><button class="btn btn-soft btn-small" id="timerReset">↺ Ulangi</button></div>
+    <p class="hint" id="timerHint">Timer akan berbunyi ketika waktu habis jika browser mengizinkan suara.</p>
+   </div>
+   <div class="panel">
+    <h3>🪜 Jalankan kegiatan sesuai urutan</h3>
+    <div class="round-list">
+     <div class="round-item"><div class="round-icon">🎴</div><div><b>1. Ambil dan baca kartu</b><p>Setiap anggota melihat pertanyaan TRY 1 pada kartu masing-masing.</p></div></div>
+     <div class="round-item"><div class="round-icon">🎤</div><div><b>2. TRY 1 — Berani mulai</b><p>Berbicara 30–60 detik atau lakukan instruksi pada kartu.</p></div></div>
+     <div class="round-item"><div class="round-icon">💬</div><div><b>3. Feedback bergiliran</b><p>Setiap anggota memberi feedback kepada teman berikutnya sesuai urutan kelompok.</p></div></div>
+     <div class="round-item"><div class="round-icon">🔄</div><div><b>4. TRY 2 — Coba lagi</b><p>Gunakan pertanyaan pengembangan yang satu topik dan perbaiki satu hal berdasarkan feedback.</p></div></div>
+     <div class="round-item"><div class="round-icon">🌱</div><div><b>5. Refleksi individual</b><p>Isi formulir refleksi secara jujur sesuai pengalamanmu sendiri.</p></div></div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+<section id="reflection">
+ <div class="wrap">
+  <div class="section-head"><span class="kicker">04 · Reflect & grow</span><h2>Feedback & Growth Reflection 💚</h2><p>Catat masukan dan pengalaman. Gunakan refleksi untuk menentukan satu langkah kecil yang ingin dilakukan berikutnya.</p></div>
+  <div class="feedback-grid">
+   <div class="panel feedback-form">
+    <h3>💬 Catat feedback teman</h3>
+    <div class="field"><label for="giver">Pemberi feedback</label><select id="giver"><option value="">Pilih murid</option></select></div>
+    <div class="field"><label for="recipient">Penerima feedback</label><select id="recipient"><option value="">Pilih murid</option></select><span class="hint">Sistem menyarankan penerima berikutnya searah jarum jam; Anda boleh mengubahnya.</span></div>
+    <div class="field"><label for="goodFeedback">👍 Hal yang sudah baik</label><textarea id="goodFeedback" placeholder="Contoh: Kamu sudah berani menyampaikan pendapat..."></textarea></div>
+    <div class="field"><label for="growFeedback">🌱 Hal yang bisa dikembangkan</label><textarea id="growFeedback" placeholder="Contoh: Pada percobaan berikutnya, coba bicara lebih jelas..."></textarea></div>
+    <button class="btn btn-primary" id="saveFeedback">Simpan feedback</button>
+    <div class="success-note" id="feedbackNotice" role="status">Feedback tersimpan di browser ini.</div>
+    <div class="feedback-list" id="feedbackList"></div>
+   </div>
+   <div class="panel reflection-form">
+    <h3>🌱 Refleksi individual</h3>
+    <div class="field"><label for="reflectName">Nama</label><select id="reflectName"><option value="">Pilih nama</option></select></div>
+    <div class="field"><label for="beforeFeeling">Sebelum TRY 1, saya merasa...</label><select id="beforeFeeling"><option value="">Pilih perasaan</option><option>Siap dan percaya diri</option><option>Cukup nyaman</option><option>Biasa saja</option><option>Gugup</option><option>Takut atau ragu</option></select></div>
+    <div class="field"><label for="challengeHard">Hal yang paling menantang bagi saya</label><textarea id="challengeHard" placeholder="Saya merasa sulit ketika..."></textarea></div>
+    <div class="field"><label for="learnedFeedback">Hal yang saya pelajari dari feedback</label><textarea id="learnedFeedback" placeholder="Dari masukan teman, saya menyadari..."></textarea></div>
+    <div class="field"><label for="try2Change">Pada TRY 2, saya mencoba memperbaiki...</label><textarea id="try2Change" placeholder="Saya mencoba untuk..."></textarea></div>
+    <div class="field"><label for="afterFeeling">Setelah TRY 2, saya merasa...</label><select id="afterFeeling"><option value="">Pilih perasaan</option><option>Lebih percaya diri</option><option>Lebih berani mencoba</option><option>Masih gugup, tetapi mau mencoba lagi</option><option>Belum banyak berubah</option><option>Perlu lebih banyak latihan</option></select></div>
+    <div class="field"><label for="nextStep">Satu langkah yang ingin saya lakukan setelah ini</label><textarea id="nextStep" placeholder="Mulai sekarang, saya akan..."></textarea></div>
+    <button class="btn btn-primary" id="saveReflection">Simpan refleksi</button>
+    <button class="btn btn-soft" id="exportData">Unduh catatan (.json)</button>
+    <div class="success-note" id="reflectionNotice" role="status">Refleksi tersimpan di browser ini.</div>
+    <p class="hint">Jawaban bersifat refleksi diri. Murid tidak harus membagikan pengalaman pribadi yang membuatnya tidak nyaman.</p>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+<footer class="foot"><div class="wrap foot-inner"><div><b>RAISE Growth 🌱</b><br>New Challenge, New Version of You.</div><div>Dirancang sebagai media pendukung layanan bimbingan klasikal.<br><a class="backtop" href="#top">Kembali ke atas ↑</a></div></div></footer>
+<script>
+const topics=[
+ {title:'Hal yang ingin saya kuasai',emoji:'🎯',try1:'Apa satu kemampuan yang ingin kamu kuasai atau kembangkan? Mengapa kamu ingin menguasainya?',try2:'Setelah mendengar masukan teman, apa langkah yang akan kamu lakukan agar kemampuan tersebut semakin berkembang?'},
+ {title:'Kegagalan yang mengajarkan saya',emoji:'🌦️',try1:'Ceritakan satu kegagalan atau kesalahan yang pernah kamu alami. Apa yang kamu pelajari dari pengalaman tersebut?',try2:'Jika menghadapi situasi yang sama lagi, apa yang akan kamu lakukan dengan cara berbeda?'},
+ {title:'Hal yang ingin saya ubah',emoji:'🪞',try1:'Apa satu kebiasaan atau hal dari dirimu yang ingin kamu ubah? Mengapa kamu ingin mengubahnya?',try2:'Setelah memikirkannya kembali, langkah kecil apa yang benar-benar bisa kamu mulai untuk mengubahnya?'},
+ {title:'Berani mencoba',emoji:'🚀',try1:'Menurutmu, mengapa seseorang perlu berani mencoba sesuatu yang baru meskipun belum yakin akan berhasil?',try2:'Setelah mendengar pendapat teman, apa satu hal baru yang membuatmu lebih berani untuk mencoba?'},
+ {title:'Arti bertumbuh',emoji:'🌱',try1:'Menurutmu, apa arti “bertumbuh” dalam kehidupan seorang murid?',try2:'Setelah mengikuti kegiatan ini, apa yang berubah dari pemahamanmu tentang arti bertumbuh?'},
+ {title:'Tantangan yang ingin saya hadapi',emoji:'🧗',try1:'Apa satu hal yang selama ini kamu hindari karena takut, malu, atau merasa belum mampu? Mengapa kamu ingin menghadapinya?',try2:'Setelah mendapat dukungan dari kelompok, langkah paling kecil apa yang berani kamu lakukan untuk menghadapi tantangan tersebut?'},
+ {title:'Inspirasi saya',emoji:'✨',try1:'Siapa atau apa yang menginspirasimu untuk menjadi lebih baik? Hal apa yang ingin kamu pelajari darinya?',try2:'Setelah mendengar cerita teman, hal baru apa yang ingin kamu terapkan untuk mengembangkan dirimu?'}
+];
+const $=id=>document.getElementById(id);
+let assigned=[], names=[], feedbacks=[], reflections={}, timerRemain=60, timerTotal=60, timerInterval=null, timerEndAt=null;
+const STORAGE_KEY='raiseGrowth_v1';
+function readStore(){try{return JSON.parse(localStorage.getItem(STORAGE_KEY)||'{}')}catch(e){return {}}}
+function saveStore(){const obj={groupName:$('groupName').value,memberCount:$('memberCount').value,names,assigned,feedbacks,reflections};localStorage.setItem(STORAGE_KEY,JSON.stringify(obj))}
+function escapeHtml(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function renderNames(){const n=+$('memberCount').value;const old=[...document.querySelectorAll('.member-name')].map(x=>x.value);names=Array.from({length:n},(_,i)=>names[i]||old[i]||`Anggota ${i+1}`);$('nameList').innerHTML=names.map((v,i)=>`<div class="field" style="margin:0"><label class="sr-only" for="member${i}">Nama anggota ${i+1}</label><input class="member-name" id="member${i}" maxlength="40" value="${escapeHtml(v)}" aria-label="Nama anggota ${i+1}"></div>`).join('');document.querySelectorAll('.member-name').forEach((el,i)=>el.addEventListener('change',()=>{names[i]=el.value.trim()||`Anggota ${i+1}`;syncPersonSelects();saveStore()}));syncPersonSelects()}
+function syncPersonSelects(){names=Array.from(document.querySelectorAll('.member-name')).map((e,i)=>e.value.trim()||`Anggota ${i+1}`);const options=names.map((n,i)=>`<option value="${i}">${escapeHtml(n)}</option>`).join('');['giver','recipient','reflectName'].forEach(id=>{const el=$(id),prev=el.value;el.innerHTML=(id==='giver'||id==='recipient'||id==='reflectName'?'<option value="">Pilih murid</option>':'')+options;if(prev!==''&&+prev<names.length)el.value=prev});if($('giver').value==='')$('giver').value='0';updateSuggestedRecipient();}
+function updateSuggestedRecipient(){const i=+$('giver').value;if(Number.isFinite(i)&&names.length){$('recipient').value=String((i+1)%names.length)}}
+function drawCards(){const n=+$('memberCount').value;syncPersonSelects();let pool=topics.slice();for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]]}assigned=pool.slice(0,n).map((t,i)=>({...t,memberIndex:i,memberName:names[i]}));renderCards();$('drawStatus').style.display='block';$('drawStatus').textContent=`Berhasil! ${n} kartu telah dibagikan secara acak. Setiap anggota memiliki pertanyaan TRY 1 dan TRY 2 pada topik yang sama.`;saveStore()}
+function renderCards(){if(!assigned.length){$('topicCards').innerHTML='<div class="empty-state"><div class="big">🎴</div><h3>Kartu tantangan menunggu kamu!</h3><p>Isi nama kelompok dan anggota, kemudian tekan <b>Acak kartu kelompok</b>.</p></div>';return} $('topicCards').innerHTML=assigned.map((c,i)=>`<article class="topic-card"><div class="tag">Kartu anggota ${i+1} · ${c.emoji} ${escapeHtml(names[i]||c.memberName)}</div><h3>${escapeHtml(c.title)}</h3><div><strong>TRY 1 — Berani mulai</strong><p>${escapeHtml(c.try1)}</p></div><div class="try2"><strong>TRY 2 — Coba lagi</strong><p>${escapeHtml(c.try2)}</p></div><div class="topic-footer"><span>Topik ${String(i+1).padStart(2,'0')}</span><span>🌱 Growth mission</span></div></article>`).join('')}
+function printCards(){if(!assigned.length){alert('Acak kartu kelompok terlebih dahulu.');return}const win=window.open('','_blank');if(!win){alert('Izinkan pop-up agar kartu bisa dicetak.');return}win.document.write(`<!doctype html><html lang="id"><head><meta charset="utf-8"><title>Kartu RAISE Growth</title><style>body{font:14px Arial,sans-serif;color:#243b36;padding:20px}h1{text-align:center}p.sub{text-align:center}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.card{border:1px solid #ccc;border-radius:14px;padding:14px;break-inside:avoid;background:#fffdf8}.card:nth-child(5n+1){background:#f7e3e8}.card:nth-child(5n+2){background:#e5edf9}.card:nth-child(5n+3){background:#e2f0e5}.card:nth-child(5n+4){background:#fbefcd}.card:nth-child(5n){background:#eee7fa}.tag{font-weight:bold;font-size:11px;text-transform:uppercase;letter-spacing:1px}.card h2{font-size:17px}.try2{border-top:1px dashed #999;margin-top:10px;padding-top:8px}.foot{text-align:center;margin:18px}</style></head><body><h1>🌱 RAISE GROWTH</h1><p class="sub">NEW CHALLENGE, NEW VERSION OF YOU · ${escapeHtml($('groupName').value)}</p><div class="grid">${assigned.map((c,i)=>`<article class="card"><div class="tag">Kartu anggota ${i+1} · ${escapeHtml(names[i]||c.memberName)}</div><h2>${c.emoji} ${escapeHtml(c.title)}</h2><b>TRY 1 — Berani mulai</b><p>${escapeHtml(c.try1)}</p><div class="try2"><b>TRY 2 — Coba lagi</b><p>${escapeHtml(c.try2)}</p></div></article>`).join('')}</div><p class="foot">Coba → Belajar → Perbaiki → Coba Lagi.</p><script>window.onload=()=>window.print()<\/script></body></html>`);win.document.close()}
+function formatTime(s){s=Math.max(0,Math.ceil(s));return `${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`}
+function updateTimer(){ $('timerDisplay').textContent=formatTime(timerRemain);$('timerCircle').style.setProperty('--progress',`${Math.max(0,Math.min(100,timerRemain/timerTotal*100))}%`); }
+function stopTimer(){if(timerInterval){clearInterval(timerInterval);timerInterval=null}}
+function tone(){try{const ctx=new (window.AudioContext||window.webkitAudioContext)();const osc=ctx.createOscillator(),gain=ctx.createGain();osc.connect(gain);gain.connect(ctx.destination);osc.frequency.value=780;gain.gain.value=.12;osc.start();osc.stop(ctx.currentTime+.35);osc.onended=()=>ctx.close()}catch(e){}}
+function startTimer(){if(timerInterval)return;if(timerRemain<=0){resetTimer()}$('timerState').textContent='Sedang berjalan';timerEndAt=Date.now()+timerRemain*1000;timerInterval=setInterval(()=>{timerRemain=Math.max(0,(timerEndAt-Date.now())/1000);updateTimer();if(timerRemain<=0){stopTimer();$('timerState').textContent='Waktu habis!';tone()}},200)}
+function pauseTimer(){stopTimer();timerRemain=Math.max(0,timerRemain);$('timerState').textContent='Dijeda';updateTimer()}
+function resetTimer(){stopTimer();timerTotal=+$('timerLength').value;timerRemain=timerTotal;$('timerState').textContent='Siap memulai';updateTimer()}
+function renderFeedback(){if(!feedbacks.length){$('feedbackList').innerHTML='<p class="hint">Belum ada feedback yang dicatat.</p>';return}$('feedbackList').innerHTML=feedbacks.map((f,i)=>`<div class="feedback-entry"><div class="meta">${escapeHtml(f.giver)} → ${escapeHtml(f.recipient)} · ${escapeHtml(f.time)}</div><p><b>👍 Yang sudah baik:</b> ${escapeHtml(f.good)}</p><p><b>🌱 Yang bisa dikembangkan:</b> ${escapeHtml(f.grow)}</p><div class="entry-actions"><button class="small-link" data-delete-feedback="${i}">Hapus</button></div></div>`).join('');document.querySelectorAll('[data-delete-feedback]').forEach(b=>b.addEventListener('click',()=>{feedbacks.splice(+b.dataset.deleteFeedback,1);renderFeedback();saveStore()}))}
+function saveFeedback(){const gi=$('giver').value,ri=$('recipient').value,good=$('goodFeedback').value.trim(),grow=$('growFeedback').value.trim();if(gi===''||ri===''||!good||!grow){alert('Pilih pemberi dan penerima, lalu isi kedua bagian feedback.');return}if(gi===ri){alert('Pilih teman lain sebagai penerima feedback.');return}feedbacks.unshift({giver:names[+gi],recipient:names[+ri],good,grow,time:new Date().toLocaleString('id-ID')});$('goodFeedback').value='';$('growFeedback').value='';$('feedbackNotice').style.display='block';setTimeout(()=>$('feedbackNotice').style.display='none',2600);renderFeedback();saveStore();}
+function saveReflection(){const ni=$('reflectName').value;if(ni===''){alert('Pilih nama terlebih dahulu.');return}const fields=['beforeFeeling','challengeHard','learnedFeedback','try2Change','afterFeeling','nextStep'];const values={};fields.forEach(f=>values[f]=$(f).value.trim());if(!values.challengeHard||!values.learnedFeedback||!values.try2Change||!values.nextStep){alert('Lengkapi bagian refleksi yang masih kosong.');return}reflections[names[+ni]]={...values,time:new Date().toLocaleString('id-ID')};$('reflectionNotice').style.display='block';setTimeout(()=>$('reflectionNotice').style.display='none',2600);saveStore()}
+function exportData(){const payload={project:'RAISE Growth',theme:'New Challenge, New Version of You',groupName:$('groupName').value,exportedAt:new Date().toISOString(),members:names,assignedCards:assigned,feedbacks,reflections};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='raise-growth-catatan.json';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url)}
+function loadGenially(){const u=$('geniallyUrl').value.trim();try{const parsed=new URL(u);if(!['http:','https:'].includes(parsed.protocol))throw new Error();$('geniallyFrame').src=parsed.href;$('openGenially').href=parsed.href;alert('Tautan Genially diperbarui. Jika tidak tampil di halaman, gunakan tombol Buka di tab baru.')}catch(e){alert('Masukkan tautan Genially yang valid (diawali https://).')}}
+function resetGroup(){if(!confirm('Reset nama, kartu, dan catatan pada sesi ini?'))return;assigned=[];feedbacks=[];reflections={};names=[];$('groupName').value='Growth Team 1';$('memberCount').value='7';renderNames();renderCards();renderFeedback();$('drawStatus').style.display='none';saveStore()}
+// restore locally saved non-sensitive work on same browser
+function restore(){const d=readStore();if(d.groupName)$('groupName').value=d.groupName;if(d.memberCount)$('memberCount').value=d.memberCount;if(Array.isArray(d.names))names=d.names;if(Array.isArray(d.assigned))assigned=d.assigned;if(Array.isArray(d.feedbacks))feedbacks=d.feedbacks;if(d.reflections&&typeof d.reflections==='object')reflections=d.reflections;renderNames();renderCards();renderFeedback()}
+$('memberCount').addEventListener('change',()=>{names=[];renderNames();assigned=[];renderCards();$('drawStatus').style.display='none';saveStore()});$('drawCards').addEventListener('click',drawCards);$('printCards').addEventListener('click',printCards);$('clearGroup').addEventListener('click',resetGroup);$('giver').addEventListener('change',updateSuggestedRecipient);$('saveFeedback').addEventListener('click',saveFeedback);$('saveReflection').addEventListener('click',saveReflection);$('exportData').addEventListener('click',exportData);$('timerStart').addEventListener('click',startTimer);$('timerPause').addEventListener('click',pauseTimer);$('timerReset').addEventListener('click',resetTimer);$('timerLength').addEventListener('change',resetTimer);$('loadGenially').addEventListener('click',loadGenially);$('groupName').addEventListener('change',saveStore);$('menuToggle').addEventListener('click',()=>{const n=$('navLinks');n.classList.toggle('open');$('menuToggle').setAttribute('aria-expanded',String(n.classList.contains('open')))});document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>$('navLinks').classList.remove('open')));restore();resetTimer();
+</script>
+</body>
+</html>
